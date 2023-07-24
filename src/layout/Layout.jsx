@@ -5,7 +5,9 @@ const Layout = (props) => {
     <div>
       <div className="navbar bg-sky-500 text-black">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">Expense Tracker</a>
+          <NavLink to="/" className="btn btn-ghost normal-case text-xl">
+            Expense Tracker
+          </NavLink>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
