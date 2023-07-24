@@ -1,9 +1,15 @@
-import Layout from './layout/Layout';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Incomes from './pages/Incomes';
+import Expenses from './pages/Expenses';
 
 export default function App() {
   return (
-    <Layout>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </Layout>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/incomes" element={<Incomes />} />
+        <Route path="/expenses" element={<Expenses />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
