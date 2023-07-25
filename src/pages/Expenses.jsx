@@ -13,6 +13,10 @@ const Expenses = () => {
   return (
     <Layout>
       <CustomForm type="Expense" onUpdateHead={handleUpdateExpense} />
+      <h3 className="text-2xl text-center my-3">
+        Total: Tk.
+        {expenses.reduce((acc, crr) => Number(acc) + Number(crr.amount), 0)}
+      </h3>
       <CustomTable data={expenses} />
     </Layout>
   );

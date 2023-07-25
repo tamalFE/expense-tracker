@@ -3,7 +3,7 @@ import { useState } from 'react';
 const CustomForm = (props) => {
   const { type, onUpdateHead } = props;
   const [text, setText] = useState('');
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();

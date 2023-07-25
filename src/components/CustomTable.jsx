@@ -14,7 +14,7 @@ const CustomTable = ({ data }) => {
             <tr key={i}>
               <th>{i + 1}</th>
               <td>{text}</td>
-              <td>tk. {amount}</td>
+              <td>tk. {Number(amount)}</td>
             </tr>
           ))}
         </tbody>
