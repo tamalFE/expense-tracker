@@ -14,7 +14,7 @@ const CustomForm = (props) => {
     onUpdateHead(newHead);
 
     setText('');
-    setAmount(0);
+    setAmount('');
   };
 
   return (
